@@ -1,0 +1,25 @@
+---
+layout: page
+title: Data Science
+permalink: /data_science/
+---
+
+<p>Hey!</p>
+
+<p>I'm going to share my learnings about data science now and again. This is mainly because I want to keep my notes organized and tidy to easily find things that I need, so mainly to help myself :)</p>
+
+<p>In the meantime, I'm happy to serve anyone going through the similar path on data science to ease their process.</p>
+
+<p>Feel free to send me any comments or feedback!</p>
+
+<p>PS: I'm new to Jekyll, so probably gonna learn & add the features by time. If there are some cool and easy things to do right away just let me know!</p>
+
+
+<!-- <ul> -->
+  {% for page in site.data_science %}
+    <!-- <li> -->
+      <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
+      <p>{{ page.summary | markdownify }}</p>
+    <!-- </li> -->
+  {% endfor %}
+<!-- </ul> -->

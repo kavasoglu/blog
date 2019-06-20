@@ -13,11 +13,11 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-# theme: jekyll-theme-so-simple 
+# theme: jekyll-theme-so-simple
 remote_theme: mmistakes/so-simple-theme
 locale: en-US
-title: "My Awesome Site"
-description: "It really is the best."
+title: "Zehra Kavasoglu"
+description: "Blog to myself"
 baseurl: # the subpath of your site, e.g. "/blog"
 url: # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 logo: # path of site logo, e.g. "/images/logo.png"
@@ -76,25 +76,65 @@ plugins:
   - jekyll-paginate
 
 # Front Matter Defaults
+# defaults:
+#   # Posts defaults
+#   - scope:
+#       path: "_posts"
+#       type: posts
+#     values:
+#       layout: post
+#       share: true
+
+collections:
+  - data_science
+
+collections:
+  data_science:
+    output: true
+
 defaults:
-  # Posts defaults
   - scope:
-      path: "_posts"
-      type: posts
+      path: ""
+      type: "data_science"
     values:
-      layout: post
-      share: true
+      layout: "default"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
 
 # Site Author
 author:
-  name:
-  picture:
+  name: Zehra Kavasoglu
+  picture: /assets/avatar.png
   email:
-  twitter:
+  twitter: kavasoglu
+  github: kavasoglu
+  linkedin:
+
   links:
     - title:
-      url:
+      url: /about/
       icon:
+
+# Select which links to show in the footer
+footer-links-active:
+  rss: true
+  facebook: false
+  email: true
+  twitter: true
+  github: true
+  linkedin: true
+  stackoverflow: true
+
+# How to display the link to the website in the footer
+# Remove this if you don't want a link in the footer
+url-pretty: "www.zehrakavasoglu.com"
 
 # Footer Links
 footer_links:
