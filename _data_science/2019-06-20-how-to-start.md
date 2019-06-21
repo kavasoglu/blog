@@ -3,7 +3,6 @@ layout: post
 categories:
   - data science
 permalink: /data_science/how_to_start/
-summary: You can easily forget theoretical knowledge if you don't play with them by getting your hands dirty on real projects. To do this, you need to prepare your working environment with installing required packages first.
 order: 1
 ---
 You can easily forget theoretical knowledge if you don't play with them by getting your hands dirty on real projects. To do this, you need to prepare your working environment with installing required packages first.

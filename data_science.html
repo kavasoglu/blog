@@ -1,6 +1,5 @@
 ---
-layout: page
-title: Data Science
+layout: post
 permalink: /data_science/
 ---
 
@@ -14,12 +13,7 @@ permalink: /data_science/
 
 <p>PS: I'm new to Jekyll, so probably gonna learn & add the features by time. If there are some cool and easy things to do right away just let me know!</p>
 
-
-<!-- <ul> -->
-  {% for page in site.data_science %}
-    <!-- <li> -->
-      <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
-      <p>{{ page.summary | markdownify }}</p>
-    <!-- </li> -->
-  {% endfor %}
-<!-- </ul> -->
+{% assign sorted_pages = site.data_science | sort:"order" %}
+{% for node in sorted_pages %}
+    <li style="font-size: 23px" ><span class="entry-title"><a href="{{ node.url }}"> {{ node.title }} </a></span></li>
+{% endfor %}
