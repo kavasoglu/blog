@@ -47,10 +47,12 @@ To run jupyter notebooks: `jupyter notebook` (preferably in the directory that y
 Notebooks can be converted to different formats like HTML, Markdown and slideshows. `nbconvert` comes with Jupyter by default, simply run: `jupyter nbconvert --to html notebook.ipynb`
 
 Useful shortcuts when working with a notebook:
-- `Ctrl + enter` => execute a cell
-- `Ctrl + a` => insert a cell above
-- `Ctrl + b` => insert a new cell below
-- `Ctrl + m` => convert a cell to a markdown cell
-- `Ctrl + c` => convert a cell to a code cell
+- `ctrl + enter` => execute a cell
+- `esc + a` => insert a cell above
+- `esc + b` => insert a new cell below
+- `esc + m` => convert a cell to a markdown cell
+- `esc + c` => convert a cell to a code cell
+- `esc + l` => put / remove line numbers
+- `esc + dd` => delete cell
 
 Check out [http://nbviewer.jupyter.org/](http://nbviewer.jupyter.org/) to render your notebooks from any location.
