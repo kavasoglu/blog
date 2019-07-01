@@ -4,6 +4,8 @@
 #   url: /
 - title: Data Science
   url: /data_science/
+- title: Book Summaries
+  url: /book_summaries/
 - title: About
   url: /about/
 # - title: External Page
